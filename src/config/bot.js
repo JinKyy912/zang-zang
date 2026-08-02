@@ -447,23 +447,23 @@ export const botConfig = {
   // FEATURE TOGGLES
   // =========================
   // Set any feature to `false` to disable it globally.
-  features: {
+   {
     // Core systems.
-    economy: true,
+    economy: false,
     leveling: true,
     moderation: true,
     logging: true,
-    welcome: true,
+    welcome: false,
 
-    // Community engagement systems.
-    tickets: true,
-    giveaways: true,
-    birthday: true,
+    // Commfeatures:unity engagement systems.
+    tickets: false,
+    giveaways: false,
+    birthday: false,
     counter: true,
 
     // Security and self-service systems.
-    verification: true,
-    reactionRoles: true,
+    verification: false,
+    reactionRoles: false,
     joinToCreate: true,
 
     // Utility/quality-of-life modules.
