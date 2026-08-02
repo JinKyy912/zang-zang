@@ -443,38 +443,34 @@ export const botConfig = {
     maintenanceMode: "The bot is currently in maintenance mode.",
   },
 
-  // =========================
-  // FEATURE TOGGLES
-  // =========================
-  // Set any feature to `false` to disable it globally.
-   {
-    // Core systems.
-    economy: false,
-    leveling: true,
-    moderation: true,
-    logging: true,
-    welcome: false,
+ features: {
+  // Core systems.
+  economy: false,
+  leveling: true,
+  moderation: true,
+  logging: true,
+  welcome: false,
 
-    // Commfeatures:unity engagement systems.
-    tickets: false,
-    giveaways: false,
-    birthday: false,
-    counter: true,
+  // Community engagement systems.
+  tickets: false,
+  giveaways: false,
+  birthday: false,
+  counter: true,
 
-    // Security and self-service systems.
-    verification: false,
-    reactionRoles: false,
-    joinToCreate: true,
+  // Security and self-service systems.
+  verification: false,
+  reactionRoles: false,
+  joinToCreate: true,
 
-    // Utility/quality-of-life modules.
-    voice: true,
-    search: true,
-    tools: true,
-    utility: true,
-    community: true,
-    fun: false,
-    music: true,
-  },
+  // Utility/quality-of-life modules.
+  voice: true,
+  search: true,
+  tools: true,
+  utility: true,
+  community: true,
+  fun: false,
+  music: true,
+},
 };
 
 export function validateConfig(config) {
