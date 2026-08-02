@@ -183,8 +183,10 @@ async function handleCountingGame(message, client) {
 }
 
 async function handleLeveling(message, client) {
-  try {
-    const rateLimitKey = `xp-event:${message.guild.id}:${message.author.id}`;
+  // Leveling disabled
+  return;
+}
+  
     const canProcess = await checkRateLimit(rateLimitKey, MESSAGE_XP_RATE_LIMIT_ATTEMPTS, MESSAGE_XP_RATE_LIMIT_WINDOW_MS);
     if (!canProcess) {
       return;
