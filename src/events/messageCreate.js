@@ -192,7 +192,7 @@ async function handleLeveling(message, client) {
 
     const levelingConfig = await getLevelingConfig(client, message.guild.id);
     
-    if (!levelingConfig?.enabled) {
+    if (!levelingConfig?.false) {
       return;
     }
 
